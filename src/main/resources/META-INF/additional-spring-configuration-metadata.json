@@ -1,0 +1,8 @@
+{
+  "properties": [
+    {
+      "name": "oneSignal.token",
+      "type": "java.lang.String",
+      "description": "Description for oneSignal.token."
+  }
+] }

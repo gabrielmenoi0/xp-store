@@ -1,0 +1,42 @@
+server:
+  port: 8080
+  shutdown: graceful
+spring:
+  application:
+    name: store-api
+  datasource:
+    url: jdbc:postgresql://localhost:5432/xp_store
+    username: postgres
+    password: 147914
+    driver-class-name: org.postgresql.Driver
+  jpa:
+    database-platform: org.hibernate.dialect.PostgreSQLDialect
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+    properties:
+      hibernate:
+        format_sql: true
+        jdbc.time_zone: UTC
+  sql:
+    init:
+      mode: always
+  api-docs:
+    path: /api-docs
+logging:
+  level:
+    org:
+      springframework:
+        web: DEBUG
+  use-json-format: false
+  file:
+    name: logs/application.log
+  logstash:
+    enabled: false
+    host: localhost
+    port: 5000
+    queue-size: 512
+jwt:
+  secret: ZmYyY2Y2MzA5MzM0NDJlYmJmYjYyNjM2NzJjZjY0NzA2ODc4NzEyYzM4ZjczY2E0MzhiOTZlZTVjY2YyYzA0NmY4Y2QzNjJmYmExZWYxMzQ1YjhkMjliY2Y3MzU4NDM2Y2I3YzQzZTA2YzMwN2JkZmM0
+  expiration: 0
+  token: Q2PJ5WKS9TMX8EV4LUHB7QZRDAKX9CY1F6UNVLKZRRBGU93WHE81JMT3X9WP6Q52

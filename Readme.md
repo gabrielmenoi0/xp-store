@@ -1,0 +1,79 @@
+<div align="center">
+<img width="180" src="readme/xpe-logo.webp" alt="XP Store logo">
+
+</div>
+<br />
+<p align="center">
+<img src="https://img.shields.io/static/v1?label=STATUS&message=CONCLUÍDO&color=brightgreen&style=for-the-badge" />
+</p>
+
+<img src="readme/swagger.png" />
+
+## Tabela de conteúdo
+
+* [Técnicas e tecnologias utilizadas](#técnicas-e-tecnologias-utilizadas)
+* [Estrutura de arquivos](#estrutura-de-arquivos)
+* [Abrir e rodar](#abrir-e-rodar)
+* [Licença](#licença)
+
+## Técnicas e tecnologias utilizadas
+
+- **Spring Boot**: Framework para construção de APIs REST com inicialização rápida e configuração mínima.
+- **Arquitetura MVC (Model-View-Controller)**: Organização em camadas separando responsabilidades entre controle, serviço e persistência.
+- **RESTful API**: Implementação de endpoints com verbos HTTP (GET, POST, PUT, DELETE) e estrutura semântica.
+- **Bean Validation**: Validações com anotações como `@NotBlank`, `@Email`, `@Size`, entre outras.
+- **Swagger (OpenAPI)**: Documentação interativa da API acessível via navegador.
+- **PostgreSQL**: Banco de dados relacional usado para persistência da aplicação.
+- **DTOs e ModelMapper**: Conversão eficiente entre objetos de entidade e objetos de transporte.
+- **Tratamento global de exceções**: Por meio de um handler centralizado, melhora a resposta em caso de erros.
+
+### Bibliotecas
+
+**Essenciais Core:**
+
+- [Spring Boot Starter Web](https://docs.spring.io/spring-boot/docs/current/reference/htmlsingle/#web) - Criação de APIs RESTful.
+- [Spring Boot Starter Data JPA](https://spring.io/projects/spring-data-jpa) - Acesso a dados com JPA.
+- [PostgreSQL Driver](https://mvnrepository.com/artifact/org.postgresql/postgresql) - Driver para conexão com banco PostgreSQL.
+- [ModelMapper](http://modelmapper.org/) - Conversão entre entidades e DTOs.
+- [Springdoc OpenAPI](https://springdoc.org/) - Geração de documentação Swagger.
+- [Lombok](https://projectlombok.org/) - Redução de código repetitivo (getters/setters, construtores).
+
+## Estrutura de arquivos
+
+O acesso ao projeto está separado da seguinte forma:
+
+Foi utilizada a arquitetura **MVC** para manter uma separação clara entre responsabilidades e facilitar a manutenção e escalabilidade do sistema.
+
+## Abrir e rodar
+
+**Para executar este projeto você precisa:**
+
+- Ter o [Java 21](https://www.azul.com/downloads/?package=jdk#zulu) instalado;
+- Ter o [Maven](https://maven.apache.org/install.html) configurado;
+- Ter o [PostgreSQL](https://www.postgresql.org/download/) com banco de dados criado chamado `xp-store`;
+- Ter uma IDE como o [IntelliJ IDEA](https://www.jetbrains.com/idea/) ou [VS Code](https://code.visualstudio.com/).
+
+**Passos para rodar:**
+
+1. Clone o repositório:
+   ```bash
+   git clone https://github.com/gabrielmenoi0/xp-store.git
+   cd xp-store-api  
+   spring:
+    datasource:
+    url: jdbc:postgresql://localhost:5432/xp-store
+    username: seu_usuario
+    password: sua_senha
+
+Execute o projeto
+<br>
+`./mvnw spring-boot:run`
+    
+
+Acesse o Swagger para testar a API:
+<br>
+`http://localhost:8080/swagger-ui.html`
+
+## Licença
+Este projeto foi desenvolvido como parte do curso de Pós-Graduação em Aqruitetura de Software e tem finalidade exclusivamente educacional.
+
