@@ -2,11 +2,7 @@
 <img width="180" src="readme/xpe-logo.webp" alt="XP Store logo">
 
 </div>
-<br />
-<p align="center">
-<img src="https://img.shields.io/static/v1?label=STATUS&message=CONCLUÍDO&color=brightgreen&style=for-the-badge" />
-</p>
-
+<br>
 <img src="readme/swagger.png" />
 
 ## Tabela de conteúdo
@@ -75,5 +71,5 @@ Acesse o Swagger para testar a API:
 `http://localhost:8080/swagger-ui.html`
 
 ## Licença
-Este projeto foi desenvolvido como parte do curso de Pós-Graduação em Aqruitetura de Software e tem finalidade exclusivamente educacional.
+Este projeto foi desenvolvido como parte do curso de Pós-Graduação em Arquitetura de Software e tem finalidade exclusivamente educacional.
 
