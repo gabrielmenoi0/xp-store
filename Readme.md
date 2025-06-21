@@ -30,6 +30,7 @@
 - [Spring Boot Starter Web](https://docs.spring.io/spring-boot/docs/current/reference/htmlsingle/#web) - Criação de APIs RESTful.
 - [Spring Boot Starter Data JPA](https://spring.io/projects/spring-data-jpa) - Acesso a dados com JPA.
 - [PostgreSQL Driver](https://mvnrepository.com/artifact/org.postgresql/postgresql) - Driver para conexão com banco PostgreSQL.
+- [H2 Database Driver](https://mvnrepository.com/artifact/com.h2database/h2) - Driver para conexão com banco H2 (banco de dados em memória ou arquivo).
 - [ModelMapper](http://modelmapper.org/) - Conversão entre entidades e DTOs.
 - [Springdoc OpenAPI](https://springdoc.org/) - Geração de documentação Swagger.
 - [Lombok](https://projectlombok.org/) - Redução de código repetitivo (getters/setters, construtores).
@@ -56,10 +57,11 @@ Foi utilizada a arquitetura **MVC** para manter uma separação clara entre resp
    git clone https://github.com/gabrielmenoi0/xp-store.git
    cd xp-store-api  
    spring:
-    datasource:
-    url: jdbc:postgresql://localhost:5432/xp-store
-    username: seu_usuario
-    password: sua_senha
+      datasource:
+         url: jdbc:h2:file:/h2/data
+         username: 123456
+         password: password
+         driverClassName: org.h2.Driver
 
 Execute o projeto
 <br>
