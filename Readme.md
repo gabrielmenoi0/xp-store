@@ -58,10 +58,10 @@ Foi utilizada a arquitetura **MVC** para manter uma separação clara entre resp
    cd xp-store-api  
    spring:
       datasource:
-         url: jdbc:h2:file:/h2/data
-         username: 123456
-         password: password
-         driverClassName: org.h2.Driver
+       url: jdbc:postgresql://localhost:5432/xp_store
+       username: postgres
+       password: 147914
+       driver-class-name: org.postgresql.Driver
 
 Execute o projeto
 <br>
