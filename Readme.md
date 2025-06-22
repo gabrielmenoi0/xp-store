@@ -40,6 +40,39 @@
 O acesso ao projeto está separado da seguinte forma:
 
 Foi utilizada a arquitetura **MVC** para manter uma separação clara entre responsabilidades e facilitar a manutenção e escalabilidade do sistema.
+```
+src
+└── main
+└── java
+└── com.xp.store
+├── config.swagger
+│   └── SwaggerConfig
+├── controllers
+│   ├── ClienteController
+│   ├── LoginController
+│   ├── PedidoController
+│   └── ProdutoController
+├── dto
+├── model
+│   ├── Cliente
+│   ├── Pedido
+│   └── Produto
+├── repository
+│   ├── ClienteRepository
+│   ├── PedidoRepository
+│   └── ProdutoRepository
+├── security
+│   └── jwt
+│       ├── JwtAuthenticationEntryPoint
+│       ├── SecurityConfig
+│       └── SecurityUtils
+├── service
+│   ├── ClienteService
+│   ├── PedidoService
+│   └── ProdutoService
+└── utils
+└── StoreApplication
+```
 
 ## Abrir e rodar
 
