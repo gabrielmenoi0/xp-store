@@ -8,6 +8,7 @@
 ## Tabela de conteúdo
 
 * [Técnicas e tecnologias utilizadas](#técnicas-e-tecnologias-utilizadas)
+* [Diagrama UML](#diagrama-uml)
 * [Estrutura de arquivos](#estrutura-de-arquivos)
 * [Abrir e rodar](#abrir-e-rodar)
 * [Licença](#licença)
@@ -34,6 +35,11 @@
 - [ModelMapper](http://modelmapper.org/) - Conversão entre entidades e DTOs.
 - [Springdoc OpenAPI](https://springdoc.org/) - Geração de documentação Swagger.
 - [Lombok](https://projectlombok.org/) - Redução de código repetitivo (getters/setters, construtores).
+
+## Diagrama UML
+<div align="center">
+<img width="180" src="readme/Xp%20Store.png" alt="XP Store logo">
+</div>
 
 ## Estrutura de arquivos
 
