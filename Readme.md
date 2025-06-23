@@ -47,7 +47,7 @@ Foi utilizada a arquitetura **MVC** para manter uma separação clara entre resp
 
 - Ter o [Java 21](https://www.azul.com/downloads/?package=jdk#zulu) instalado;
 - Ter o [Maven](https://maven.apache.org/install.html) configurado;
-- Ter o [PostgreSQL](https://www.postgresql.org/download/) com banco de dados criado chamado `xp-store`;
+- Ter o [PostgreSQL](https://www.postgresql.org/download/) com banco de dados criado chamado `xp_store`;
 - Ter uma IDE como o [IntelliJ IDEA](https://www.jetbrains.com/idea/) ou [VS Code](https://code.visualstudio.com/).
 
 **Passos para rodar:**
